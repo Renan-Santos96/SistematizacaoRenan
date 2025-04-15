@@ -1,0 +1,55 @@
+.custom-header {
+    height: 100px;
+    background-color:lightskyblue;
+}
+
+.custom-nav {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    font-size: xx-large;
+    font-weight: 900;
+    margin-right: 0px !important;
+    color:goldenrod;
+    margin-left: 100px;
+
+}
+
+.custom-toolbar {
+    margin-top: 25px;
+    background-color:#FFE4C4;
+    justify-content: space-around !important;
+    
+}
+
+.btn-group button {
+    background-color:white
+}
+
+.custom-div-carousel {
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    
+}
+
+.custom-carousel {
+    
+}
+
+.custom-carousel img {
+    height: 500px;
+    width: 80%;
+}
+
+.custom-div-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+.custom-card {
+    
+}
