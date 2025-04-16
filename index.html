@@ -9,12 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" async></script>
     <title>Document</title>
@@ -23,63 +19,130 @@
   <body>
     <header class="custom-header">
       <div class="container-fluid">
-        <a class="navbar-brand custom-nav" href="#">Clínica Vital</a>
+        <p class="custom-nav" href="#">Clínica Vital</p>
       </div>
     </header>
     <main>
-        
-          <div class="custom-toolbar btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-secondary">Home</button>
-              <button type="button" class="btn btn-outline-secondary">Sobre nós</button>
-              <button type="button" class="btn btn-outline-secondary">Agendamento</button>
-              <button type="button" class="btn btn-outline-secondary">Resultados de exames</button>
+      <div
+        class="custom-toolbar btn-toolbar justify-content-between"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">Home</button>
+          <button type="button" class="btn btn-outline-secondary">
+            Sobre nós
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            Agendamento
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            Resultados de exames
+          </button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-text" id="btnGroupAddon2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+            aria-describedby="btnGroupAddon2"
+          />
+        </div>
+      </div>
+
+      <div class="custom-div-carousel">
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+      
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="../SistematizacaoRenan/imagens/CardMedico.png" class="d-block w-100 c-img" alt="Slide 1">
+              
             </div>
-            <div class="input-group">
-              <div class="input-group-text" id="btnGroupAddon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg></div>
-              <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+            <div class="carousel-item c-item">
+              <img src="../SistematizacaoRenan/imagens/CardMedico2.png" class="d-block w-100 c-img" alt="Slide 2">
+              
+            </div>
+            <div class="carousel-item c-item">
+              <img src="../SistematizacaoRenan/imagens/CardMedico3.png" class="d-block w-100 c-img" alt="Slide 3">
+              
             </div>
           </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
 
-          <div class="custom-div-carousel">
-            <div id="carouselExampleControls" class="carousel slide custom-carousel" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../SistematizacaoRenan/imagens/Card do medico.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../SistematizacaoRenan/imagens/Card do medico.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+      <div class="custom-div-cards">
+        <div class="card custom-card" style="width: 18rem">
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nome do médico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-          </div>
-          
-
-          <div class="custom-div-cards">
-
-            <div class="card custom-card" style="width: 18rem;">
-                
-                <div class="card-body">
-                    <h3 class="card-title">Sobre nós</h3>
-                    <h5>Clínica Vital — 15 anos promovendo saúde com excelência e cuidado</h5>
-                  <p class="card-text">Fundada em 2010, a Clínica Vital nasceu com a missão de oferecer um atendimento médico humanizado, integrando ciência, tecnologia e acolhimento em cada consulta. Localizada no coração de [cidade fictícia ou real, se quiser inserir], a clínica rapidamente se tornou referência em saúde multidisciplinar, graças ao seu compromisso com a qualidade de vida e bem-estar de seus pacientes.
-
-                    Ao longo dos seus 15 anos de história, a Clínica Vital construiu uma trajetória sólida, baseada na confiança, ética e resultados. Reunindo um time de especialistas altamente qualificados, a clínica se destacou pelas suas abordagens personalizadas e centradas no paciente, sempre com foco na prevenção e tratamento de forma integrada.</p>
-                </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Especialidade</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Especialidades</option>
+                  <option value="Endocrinologia">Endocrinologia</option>
+                  <option value="Nutrologia">Nutrologia</option>
+                  <option value="Gastroenterologia">Gastroenterologia</option>
+                </select>
               </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
-          
+        </div>
+        <div class="card custom-card" style="width: 18rem">
+          <div class="card-body">
+            <h3 class="card-title">Sobre nós</h3>
+            <h5>
+              Clínica Vital — 15 anos promovendo saúde com excelência e cuidado
+            </h5>
+            <p class="card-text">
+              Fundada em 2010, a Clínica Vital nasceu com a missão de oferecer
+              um atendimento médico humanizado, integrando ciência, tecnologia e
+              acolhimento em cada consulta. Localizada no coração de [cidade
+              fictícia ou real, se quiser inserir], a clínica rapidamente se
+              tornou referência em saúde multidisciplinar, graças ao seu
+              compromisso com a qualidade de vida e bem-estar de seus pacientes.
+              Ao longo dos seus 15 anos de história, a Clínica Vital construiu
+              uma trajetória sólida, baseada na confiança, ética e resultados.
+              Reunindo um time de especialistas altamente qualificados, a
+              clínica se destacou pelas suas abordagens personalizadas e
+              centradas no paciente, sempre com foco na prevenção e tratamento
+              de forma integrada.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="custom-footer"></footer>
   </body>
 </html>
