@@ -33,6 +33,7 @@
 }
 
 
+
 .carousel-item.carousel-item-next .c-img,
 .carousel-item.carousel-item-prev .c-img {
   width: 100% !important;
@@ -79,4 +80,17 @@
   height: 150px;
   bottom: 0;
   left: 0;
+}
+
+.custom-select {
+  display:flex;
+  flex-direction: column;
+  font-size: medium !important; 
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  
 }
