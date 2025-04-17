@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+      </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" async></script>
-    <title>Document</title>
+    <title>Clínica Vital</title>
   </head>
 
   <body>
@@ -30,10 +27,10 @@
       >
         <div class="btn-group" role="group" aria-label="First group">
           <button type="button" class="btn btn-outline-secondary">Home</button>
-          <button type="button" class="btn btn-outline-secondary">
+          <button id="meuBotaoSobreNos" type="button" class="btn btn-outline-secondary">
             Sobre nós
           </button>
-          <button type="button" class="btn btn-outline-secondary">
+          <button id="meuBotaoAgendamento" type="button" class="btn btn-outline-secondary">
             Agendamento
           </button>
           <button type="button" class="btn btn-outline-secondary">
@@ -67,15 +64,15 @@
 
     
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner custom-carousel">
           <div class="carousel-item active">
-            <img src="../SistematizacaoRenan/imagens/Imagemmed1.png" class="d-block w-100" alt="">
+            <img src="../SistematizacaoRenan/imagens/Imagemmed1.png" class="custom-img" alt="">
           </div>
           <div class="carousel-item">
-            <img src="../SistematizacaoRenan/imagens/Imagemmed2.png" class="d-block w-100" alt="...">
+            <img src="../SistematizacaoRenan/imagens/Imagemmed2.png" class="custom-img" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../SistematizacaoRenan/imagens/Imagemmed3.png" class="d-block w-100" alt="...">
+            <img src="../SistematizacaoRenan/imagens/Imagemmed3.png" class="custom-img" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -90,7 +87,7 @@
     
 
       <div class="custom-div-cards">
-        <div class="card custom-card" style="width: 18rem">
+        <div id="secaoDestinoAgendamento" class="card custom-card" style="width: 18rem">
           <div class="card-body">
             <form>
               <div class="mb-3">
@@ -147,7 +144,7 @@
           </div>
         </div>
         <div class="card custom-card" style="width: 18rem">
-          <div class="card-body">
+          <div id="secaoDestino" class="card-body">
             <h3 class="card-title">Sobre nós</h3>
             <h5>
               Clínica Vital — 15 anos promovendo saúde com excelência e cuidado
