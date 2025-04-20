@@ -1,6 +1,13 @@
 body {
   font-family: 'Bellota', cursive;
-  background-color: green;
+  background-color: seashell;
+
+  
+  background-image: url('../SistematizacaoRenan/imagens/Clinica.png'); /* Caminho para a sua imagem */
+  background-size: cover; /* Cobrir toda a tela */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-attachment: fixed; /* Manter a imagem fixa durante a rolagem */
+  
 }
 
 .custom-header {
