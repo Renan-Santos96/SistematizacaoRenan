@@ -14,3 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const botaoHome = document.getElementById('Botaohome');
+
+  if (botaoHome) {
+      botaoHome.addEventListener('click', function() {
+          window.location.href = 'index.html'; 
+      });
+  } else {
+      console.error('Erro: O botão "Home" com o ID "Botaohome" não foi encontrado.');
+  }
+});
